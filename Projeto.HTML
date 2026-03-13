@@ -12,10 +12,10 @@
     <!-- cabeçalho -->
     <header>
         <div id="logo">
-            <img src="imagens/logo.png" alt="Logo" height="70" style="border-radius: 50px;">
+            <img src="imagens/logo.png" alt="Logo" height="70" style="border-radius: 50px; ">
         </div>
 
-        <nav>
+        <nav class="cabecalhoerodape">
             <a href="#">Home</a>
             <a href="#">Sobre</a>
             <a href="#">Produtos</a>
@@ -40,35 +40,46 @@
     </section>
 
     <!-- imagens e opções -->
-    <section id="cards">
-        <div>
-            <img src="imagens/economico.png">
-            <nav>
-                <a href="">Economico</a>
-            </nav>
+    <section class="cards">
+        <div id="fundoImagens">
+            <div>
+                <img src="imagens/basico.png">
+                <nav class="opcoes">
+                    <a href="">Básico</a>
+                </nav>
+            </div>
+
+            <div>
+                <img src="imagens/padrao.png">
+                <nav class="opcoes">
+                    <a href="">Padrão</a>
+                </nav>
+            </div>
+
+            <div>
+                <img src="imagens/premium.png">
+                <nav class="opcoes">
+                    <a href="">Premium</a>
+                </nav>
+            </div>
         </div>
 
+        <!-- Escolha seu plano -->
+    </section>
+    <section id="escolhaPlano">
         <div>
-            <img src="imagens/padrao.png">
-            <nav>
-                <a href="">Padrão</a>
-            </nav>
+            Escolha seu plano!
         </div>
-
-        <div>
-            <img src="imagens/premium.png">
-            <nav>
-                <a href="">Premium</a>
-            </nav>
-        </div>
-
     </section>
 
     <!-- formulario -->
     <section id="formulario">
-        <div id="dadosFormulario">
-            <label>Nome:
+        <div class="dadosFormulario">
+            <label>Nome Completo:
                 <input type="text" name="nome" id="nome" required>
+            </label>
+            <label>Nome do PET:
+                <input type="text" name="nomePET" id="nomePET" required>
             </label>
 
             <label>Telefone:
@@ -79,9 +90,15 @@
                 <input type="email" name="email" id="email">
             </label>
 
-            <label>Duvida:
-                <input type="text" name="duvida" id="duvida" required>
+            <label id="pagamento">Forma de paginamento:
+                <input type="radio" name="formaPagamento" id="formaPagamento" required>Cartão
+                <input type="radio" name="formaPagamento" id="formaPagamento" required>Boleto
+                <input type="radio" name="formaPagamento" id="formaPagamento" required>Pix
             </label>
+
+            <nav class="cadastro">
+                <a href="">Cadastre-se</a>
+            </nav>
         </div>
 
     </section>
@@ -91,7 +108,7 @@
         <div id="rodape">
             © 2026
         </div>
-        <nav>
+        <nav class="cabecalhoerodape">
             <a href="#">Trabalhe Conosco</a>
             <a href="#">Política de Privacidade</a>
             <a href="#">Termos de Serviço</a>

@@ -6,11 +6,12 @@
 
 body {
     background-color: #D3DFF4;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* cabeçalho e rodapé */
-header, footer {
+header,
+footer {
     height: 100px;
     background-color: #B8CBEE;
     display: flex;
@@ -18,24 +19,27 @@ header, footer {
     justify-content: space-between;
 }
 
-#logo, #rodape {
+#logo,
+#rodape {
     margin-inline: 40px;
 }
 
 /* home, sobre, produtos, contatos */
-nav>a {
-    color: white;
+.cabecalhoerodape>a {
+    color: rgb(0, 0, 0);
     font-size: 24px;
     padding: 10px;
     text-decoration: none;
-    background-color: #7cacff;
+    background-color: #cecece;
     border-radius: 10px;
+    border: 1px solid;
+    color: black;
     margin-inline: 20px;
 }
 
-nav>a:hover {
-    background-color: #9cc0ff;
-    color: black;
+.cabecalhoerodape>a:hover {
+    background-color: #D9D9D9;
+    color: rgb(255, 255, 255);
 }
 
 /* foto */
@@ -43,29 +47,73 @@ nav>a:hover {
     display: flex;
     justify-content: center;
     padding: 10px;
+
 }
 
 /* SERVIÇOS */
 #servico {
-    background-color: rgb(99, 87, 255);
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    font-size: 40px;
+}
+
+/* Escolha de plano */
+#escolhaPlano {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
 }
 
 /* Imagens e opções */
-#cards {
+.cards {
     display: flex;
     justify-content: center;
     gap: 100px;
 }
 
-#cards img {
+.cards img {
     width: 270px;
     height: 300px;
     border-radius: 10px;
+    border: 1px solid;
+    color: black;
+}
+
+.cards #fundoImagens {
+    background-color: #4593ca;
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.opcoes>a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cecece;
+    border-radius: 10px;
+    border: 1px solid;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.opcoes>a:hover {
+    background-color: #D9D9D9;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -77,22 +125,53 @@ nav>a:hover {
     align-items: center;
 }
 
-#dadosFormulario {
-    width: 100%;
-    max-width: 700px;
+.dadosFormulario {
+    width: 1000px;
     padding: 20px;
-    background: #888;
+    background: #569ed1;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
 
-#dadosFormulario label {
+.dadosFormulario label {
     display: flex;
     flex-direction: column;
 }
 
-#dadosFormulario input {
-    margin-top: 5px;
+.dadosFormulario #pagamento {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.dadosFormulario input {
+    margin-bottom: 30px;
     padding: 8px;
+}
+
+.dadosFormulario .cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.dadosFormulario .cadastro>a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cecece;
+    border-radius: 10px;
+    border: 1px solid;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.dadosFormulario .cadastro>a:hover {
+    background-color: #D9D9D9;
+    color: rgb(0, 0, 0);
 }

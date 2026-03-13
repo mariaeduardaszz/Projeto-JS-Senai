@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* corpo texto */
+body {
+    background-color: #D3DFF4;
+    color: white;
+    height: 100vh;
+}
+
+/* #cabeca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* cabeçalho e rodape */
+header,footer {
+    height: 100px;
+    background-color: #B8CBEE;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#rodape,#logo{
+    color: azure;
+    font-size: 30px;
+    margin-inline: 30px;
+}
+
+/* opções */
+nav>a {
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(61, 2, 85);
+    border-radius: 10px;
+    transition: 1s;
+    margin-inline: 30px;
+}
+
+nav>a:hover {
+    background-color: rgb(222, 138, 255);
+    color: black;
+}
+
+/* foto da pagina  */
+
+#foto > div, #Foto > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#foto img, #Foto img {
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* contexto da pagina */
+#Serviços {
+    background-color: rgb(99, 87, 255);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#Blog>div {
+    font-size: 20px;
+}
+
+/* fundo do cards */
+#cards {
+    background-color: #D3DFF4;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards>div {
+    background-color: rgb(255, 0, 140);
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+/* Estilização do formulário */
+#formulario {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+#dadosFormulario {
+    width: 100px;
+    max-width: 700px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#dadosFormulario label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+#dadosFormulario input {
+    margin-top: 6px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(0,0,0,0.35);
+    color: white;
+}
+
+#dadosFormulario input:focus {
+    outline: none;
+    border-color: rgba(221,138,255,0.9);
+    box-shadow: 0 0 0 6px rgba(221,138,255,0.08);
+}
+
+/* quadrados da pagina */
+#quadradoUm {
+    background-color: rgb(8, 63, 63);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+}
+
+#quadradoDois {
+    background-color: rgb(0, 224, 253);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 3px solid black;
+}
+
+/* formulario */
+#formulario {
+    background-color: #D3DFF4;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario>div {
+    background-color: rgb(143, 143, 143);
+    width: 1000px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* corpo texto */
 body {
     background-color: #D3DFF4;
@@ -17,17 +18,19 @@ body {
 } */
 
 /* cabeçalho e rodape */
-header,footer {
+header,
+footer {
     height: 100px;
     background-color: #B8CBEE;
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
-#rodape,#logo{
+#rodape,
+#logo {
     color: azure;
     font-size: 30px;
     margin-inline: 30px;
@@ -52,17 +55,13 @@ nav>a:hover {
 
 /* foto da pagina  */
 
-#foto > div, #Foto > div {
+#foto>div,
+#Foto>div {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-#foto img, #Foto img {
-    width: 70%;
-    height: auto;
-    max-width: 100%;
-    display: block;
+    height: 80%;
+    padding: 10px;
 }
 
 /* contexto da pagina */
@@ -105,8 +104,8 @@ nav>a:hover {
 #dadosFormulario {
     width: 100px;
     max-width: 700px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 18px;
     border-radius: 10px;
     display: flex;
@@ -124,15 +123,15 @@ nav>a:hover {
     margin-top: 6px;
     padding: 8px 10px;
     border-radius: 6px;
-    border: 1px solid rgba(255,255,255,0.15);
-    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.35);
     color: white;
 }
 
 #dadosFormulario input:focus {
     outline: none;
-    border-color: rgba(221,138,255,0.9);
-    box-shadow: 0 0 0 6px rgba(221,138,255,0.08);
+    border-color: rgba(221, 138, 255, 0.9);
+    box-shadow: 0 0 0 6px rgba(221, 138, 255, 0.08);
 }
 
 /* quadrados da pagina */
@@ -169,5 +168,3 @@ nav>a:hover {
     height: 300px;
     margin-left: 50px;
 }
-
-
